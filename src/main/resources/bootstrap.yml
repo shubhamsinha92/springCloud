@@ -1,28 +1,6 @@
-server:
-    port: 8888
-
 spring:
-    profiles:
-        active: vault
-
-    application:
-        name: configuration-server
-
-    cloud:
-        vault:
-            host: 127.0.0.1
-            port: 8200
-            scheme: http
-            authentication: TOKEN
-            token: 11edb614-2cc8-5518-d960-3df1f09e8c1d
-#            ssl:
-#                trust-store: configTrustStore.jks
-#                trust-store-password: changeit
-        config:
-            server:
-                vault:
-                  host: 127.0.0.1
-                  port: 8200
-                  scheme: http
-                  authentication: TOKEN
-                  token: 11edb614-2cc8-5518-d960-3df1f09e8c1d
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/spring-cloud-samples/config-repo
