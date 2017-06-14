@@ -1,9 +1,0 @@
-person:
-  firstName: John
-  lastName: Doe
-  age: 24
-  location: Chicago
-  Occupation: Software Engineer
-  hobbies:
-    firstHobby: Working out
-    secondHobby: Rock Climbing
